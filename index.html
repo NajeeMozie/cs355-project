@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FARFETCH</title>
+    <title>ARVY & LULA</title>
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,7 +29,7 @@
       <!-- header logo + icon -->
       <header class="header">
         <h6>Womenswear</h6>
-        <h1>FARFETCH</h1>
+        <h1>ARVY & LULA</h1>
         <div class="header-icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -83,6 +83,12 @@
             <a href="./sale.html"> <span>Sale</span></a>
           </li>
         </ul>
+
+        <!-- Search Form -->
+        <form id="searchForm" class="d-flex align-items-center" style="margin-left: auto; position: absolute; right: 20px;">
+          <input class="form-control me-2" id="searchInput" type="search" placeholder="Search" required />
+        </form>
+
       </div>
 
       <!-- main body content -->
@@ -182,6 +188,21 @@
           </div>
         </section>
       </section>
+    </div>
+
+    <!--Where search results will appear-->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="searchModalLabel">Search Results</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="searchResults">
+
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Bootstrap JS -->
